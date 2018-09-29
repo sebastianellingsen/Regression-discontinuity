@@ -16,6 +16,41 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## Introduction
+In the absence of randomized treatment assignment, some research designs identify the causal effects of non-experimental interventions.
+
+One particularly rigoruous such approach is the regression discontinuity design.
+
+The key feature of the design is that the probability of a treatment changes abruptly at the known threshold.
+
+**Basic idea**: under some assumptions, units with scores barely below the cutoff can be used as counterfactuals for units with scores barely above it.
+
+The regression discontinuity design has been successfully used to study:
+
+- ...
+- ...
+
+These slides will cover the basics of this design and how to implement the analysis using R.
+
+
+
+## The potential outcome framework
+
+
+
+## The building blocks
+
+- *n*  units indexed by *i=1,...,n*.
+
+- Each unit has a *running variable*, *X~i~*.
+
+- There is a common cutoff, *c*.
+
+- Units with *X~i~≥ c* are assigned to the treatment condition, while units with *X~i~ < c* are  assigned  to  the  control  condition.
+
+- This  assignment rule is  defined  as *T~i~=1(X~i~≥c)*.
+
+
+**Key feature of the RD design**: probability of treatment is a function of the score and it changes discontinuously at the cutoff.
 
 ## Applications
 
