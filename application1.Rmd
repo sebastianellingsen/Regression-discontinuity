@@ -59,7 +59,7 @@ $Y_i~= (1−T_i)\times Y_i(0) +T_i \times Y_i(1).$
 
 
 **Key feature of the RD design**: probability of treatment is a function of the score and it changes discontinuously at the cutoff.
-
+ 
 ## Application - Incumbency advantage in US House elections
 
 
