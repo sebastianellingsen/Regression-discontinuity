@@ -33,25 +33,34 @@ These slides will cover the basics of this design and how to implement the analy
 
 
 
-## The potential outcome framework
+## The potential outcomes framework
+Each unit has two potential outcomes, $Y_i(1)$ and $Y_i(0)$, corresponding to the outcomes that would be observed under the treatment or control conditions respectively.
+
+$T_i$ is the treatment dummy denoting $1$ if $i$ is assigned to the treatment condition and $0$ otherwise.
+
+Note, we never observe both potential outcomes for any one individual. We observe 
+
+$Y_i~= (1−T_i)\times Y_i(0) +T_i \times Y_i(1).$
+
+
 
 
 ## The building blocks
 
-- *n*  units indexed by *i=1,...,n*.
+- $n$  units indexed by $i=1,...,n$.
 
-- Each unit has a *running variable*, *X~i~*.
+- Each unit has a *running variable*, $X_i$.
 
-- There is a common cutoff, *c*.
+- There is a known common cutoff for all the units, $c$.
 
-- Units with *X~i~≥ c* are assigned to the treatment condition, while units with *X~i~ < c* are  assigned  to  the  control  condition.
+- Units with $X_i\geq c$ are assigned to the treatment condition, while units with $X_i < c$ are  assigned  to  the  control  condition.
 
-- This  assignment rule is  defined  as *T~i~=1(X~i~≥c)*.
+- This  assignment rule is  defined  as $T_i={\bf{1}}(X_i\geq c)$.
 
 
 **Key feature of the RD design**: probability of treatment is a function of the score and it changes discontinuously at the cutoff.
 
-## Applications
+## Application - Incumbency advantage in US House elections
 
 
 ## Graphical analysis
