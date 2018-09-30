@@ -36,7 +36,6 @@ These slides will cover the basics of this design and how to implement the analy
 ## The potential outcome framework
 
 
-
 ## The building blocks
 
 - *n*  units indexed by *i=1,...,n*.
