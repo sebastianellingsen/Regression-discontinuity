@@ -1,1 +1,1 @@
-# Regression-discontinuity
+# Regression discontinuity designs.
